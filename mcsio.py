@@ -10,6 +10,6 @@ while True:
     else:
         print('Button released')
 
-    payload = {"datepoints":[{"dateChnId":"Hum","values":{"value":humidity}},{"dataChnId":"Temp","values":{"value":temperature}},{"dataChnId":"SwitchStatus","values":{value":SwitchStatus}}]}
+    payload = {"datepoints":[{"dateChnId":"Hum","values":{"value":humidity}},{"dataChnId":"Temp","values":{"value":temperature}},{"dataChnId":"SwitchStatus","values":{"value":SwitchStatus}}]}
 
 
