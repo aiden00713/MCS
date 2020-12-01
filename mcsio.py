@@ -28,8 +28,10 @@ import json
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(24,GPIO.IN,pull_up_down=GPIO.PUD_UP)
+
 deviceId = "DnBJkB0w"
 deviceKey = "OPtO4Ut4UIzu2PQQ"
+
 def post_to_mcs(payload):
     headers = {"Content-type": "application/json", "deviceKey": deviceKey}
     not_connected = 1
@@ -58,6 +60,7 @@ while True:
         else:
             print('Failed to get reading. Try again!')
             sys.exit(1)
+            
         if(SwitchStatus==0):
             print('Button pressed')
         else:
